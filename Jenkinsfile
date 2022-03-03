@@ -14,7 +14,7 @@ pipeline {
         }
         stage('countinuous deployment') {
             steps {
-                sh 'cp target/hello-1.0.war /opt/apache-tomcat-9.0.59/webapps'
+                sh 'sshpass -p "nath" scp target/hello-1.0.war nath@172.17.0.4:/opt/apache-tomcat-9.0.59/webapps'
             }
         }
     }
