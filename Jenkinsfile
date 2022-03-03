@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('countinuous download') {
             steps {
-                git 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
+                git 'https://github.com/daticahealth/java-war-deploy-example.git'
             }
         }
         stage('countinuous build') {
